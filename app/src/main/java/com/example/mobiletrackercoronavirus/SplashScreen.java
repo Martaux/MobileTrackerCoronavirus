@@ -9,8 +9,8 @@ import android.widget.ImageButton;
 
 public class SplashScreen extends AppCompatActivity {
     private ImageButton imageButton;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+//    @Override
+    public SplashScreen(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
@@ -27,14 +27,14 @@ public class SplashScreen extends AppCompatActivity {
         Intent intent = new Intent(this, Prevention.class);
         startActivity(intent);
     }
-    private ImageButton imageButton;
+    private ImageButton imageButton2;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        imageButton = (ImageButton) findViewById(R.id.button_go);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        imageButton2 = (ImageButton) findViewById(R.id.button_go);
+        imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openMainActivity();

@@ -22,13 +22,13 @@ public class Prevention extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent= new Intent((Intent.ACTION_VIEW, Uri.parse("https://www.gov.pl/web/koronawirus"));
+                Intent browserIntent= new Intent((Intent.ACTION_VIEW), Uri.parse("https://www.gov.pl/web/koronawirus"));
                 startActivity(browserIntent);
                 startActivity(browserIntent);
             }
         });
     }
-    protected void onCreate(Bundle savedInstanceState) {
+    public Prevention(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prevention);
 
@@ -36,7 +36,7 @@ public class Prevention extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent= new Intent((Intent.ACTION_VIEW, Uri.parse("https://gis.gov.pl/kampania/koronawirus-informacje/"));
+                Intent browserIntent= new Intent((Intent.ACTION_VIEW), Uri.parse("https://gis.gov.pl/kampania/koronawirus-informacje/"));
                 startActivity(browserIntent);
                 startActivity(browserIntent);
             }
