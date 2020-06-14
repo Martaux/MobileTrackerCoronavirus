@@ -20,7 +20,7 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         positionCountry = intent.getIntExtra("position",0);
 
-        getSupportActionBar().setTitle("Details of "+ com.example.mobiletrackercoronavirus.AffectedCountries.countryModelsList.get(positionCountry).getCountry());
+        getSupportActionBar().setTitle("Szczegółowe informacje o "+ com.example.mobiletrackercoronavirus.AffectedCountries.countryModelsList.get(positionCountry).getCountry());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

@@ -49,13 +49,14 @@
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/cases"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aclonica"
-                        android:textColor="@color/colorDark"
-                        android:text="Total Cases"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Potwierdzone zakażenia"
+                        android:textColor="@color/colorDark" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -67,13 +68,14 @@
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/colorGreen"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aclonica"
-                        android:textColor="@color/colorDark"
-                        android:text="Recovered"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Zdrowi"
+                        android:textColor="@color/colorDark" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -85,13 +87,14 @@
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/colorRed"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Deaths"
                         android:fontFamily="@font/aclonica"
-                        android:textColor="@color/colorDark"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Śmiertelne"
+                        android:textColor="@color/colorDark" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -103,13 +106,14 @@
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
                         android:background="@color/active"/>
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aclonica"
-                        android:textColor="@color/colorDark"
-                        android:text="Active"
-                        android:paddingLeft="10dp"/>
+                        android:paddingLeft="10dp"
+                        android:text="Aktywne"
+                        android:textColor="@color/colorDark" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -160,7 +164,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="global stats"
+                        android:text="świat"
                         android:textAllCaps="true"
                         android:textSize="28sp"
                         android:textStyle="bold"
@@ -187,7 +191,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/aclonica"
-                            android:text="Cases"
+                            android:text="Potwierdzone"
                             android:textSize="18sp"/>
                         <TextView
                             android:layout_width="fill_parent"
@@ -222,7 +226,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/aclonica"
-                            android:text="Recovored"
+                            android:text="Osoby wyzdrowiałe"
                             android:textSize="18sp"/>
                         <TextView
                             android:layout_width="fill_parent"
@@ -231,7 +235,7 @@
                             android:id="@+id/tvRecovered"
                             android:textAlignment="textEnd"
                             android:textSize="18sp"
-                            android:textColor="@color/colorWhite"
+                            android:textColor="@color/colorGreen"
                             android:textStyle="bold"
                             android:fontFamily="@font/aclonica"
                             android:layout_alignParentRight="true"/>
@@ -256,7 +260,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/aclonica"
-                            android:text="Critical"
+                            android:text="Krytyczne"
                             android:textSize="18sp"/>
                         <TextView
                             android:layout_width="fill_parent"
@@ -291,7 +295,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/aclonica"
-                            android:text="Active"
+                            android:text="Aktywne zakażenia"
                             android:textSize="18sp"/>
                         <TextView
                             android:layout_width="fill_parent"
@@ -326,7 +330,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/aclonica"
-                            android:text="Today Cases"
+                            android:text="Nowe zakażenia"
                             android:textSize="18sp"/>
                         <TextView
                             android:layout_width="fill_parent"

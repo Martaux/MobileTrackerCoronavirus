@@ -8,41 +8,39 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class SplashScreen extends AppCompatActivity {
-    private ImageButton imageButton;
-//    @Override
-    public SplashScreen(Bundle savedInstanceState) {
+    private ImageButton button_info;
+    private ImageButton button_go;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        imageButton = (ImageButton) findViewById(R.id.button_info);
-        imageButton.setOnClickListener(new View.OnClickListener() {
+        button_info = findViewById(R.id.button_info);
+        button_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openPrevention();
             }
         });
+
+        button_go = findViewById(R.id.button_go);
+        button_go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMainActivity();
+            }
+        });
+
     }
 
     private void openPrevention() {
         Intent intent = new Intent(this, Prevention.class);
         startActivity(intent);
     }
-    private ImageButton imageButton2;
-    @Override
-    protected void onCreate (Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
 
-        imageButton2 = (ImageButton) findViewById(R.id.button_go);
-        imageButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity();
-            }
-        });
-    }
     private void openMainActivity() {
-        Intent intent = new Intent(this, Prevention.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

@@ -50,7 +50,7 @@ public class AffectedCountries extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         simpleArcLoader = findViewById(R.id.loader);
 
-        getSupportActionBar().setTitle("Affected Countries");
+        getSupportActionBar().setTitle("Zakażone państwa");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

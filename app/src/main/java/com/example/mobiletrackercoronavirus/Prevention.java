@@ -8,35 +8,30 @@ import android.net.Uri;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class Prevention extends AppCompatActivity {
-    private Button button;
-    @Override
+    private Button button_mz;
+    private Button button_sanepid;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prevention);
 
-        button = (Button) findViewById(R.id.button_mz);
-        button.setOnClickListener(new View.OnClickListener() {
+        button_mz = findViewById(R.id.button_mz);
+        button_mz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent= new Intent((Intent.ACTION_VIEW), Uri.parse("https://www.gov.pl/web/koronawirus"));
+                Intent browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.gov.pl/web/koronawirus"));
                 startActivity(browserIntent);
                 startActivity(browserIntent);
             }
         });
-    }
-    public Prevention(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prevention);
 
-        button = (Button) findViewById(R.id.button_sanepid);
-        button.setOnClickListener(new View.OnClickListener() {
+        button_sanepid = findViewById(R.id.button_sanepid);
+        button_sanepid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent= new Intent((Intent.ACTION_VIEW), Uri.parse("https://gis.gov.pl/kampania/koronawirus-informacje/"));
+                Intent browserIntent= new Intent(Intent.ACTION_VIEW, Uri.parse("https://gis.gov.pl/kampania/koronawirus-informacje/"));
                 startActivity(browserIntent);
                 startActivity(browserIntent);
             }
